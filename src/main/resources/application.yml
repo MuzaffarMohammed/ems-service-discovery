@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: ems-service-discovery
+    
+server:
+  port: 4340
+
+eureka:
+  instance:
+    hostname: localhost
+#    lease-renewal-interval-in-seconds: 2
+# Indicates the time in seconds that the Eureka server waits since it received the last heartbeat from a client before it can remove that client from its registry – the default value is 90
+#    lease-expiration-duration-in-seconds: 2
+#  server:
+# This property tells the Eureka server to run a job at this frequency to evict the expired clients – the default value is 60 seconds
+#    eviction-interval-timer-in-ms: 1000 
+#    response-cache-update-interval-ms: 1000
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/

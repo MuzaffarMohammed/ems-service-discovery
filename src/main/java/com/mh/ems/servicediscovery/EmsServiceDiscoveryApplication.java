@@ -2,12 +2,14 @@ package com.mh.ems.servicediscovery;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
 
 @SpringBootApplication
-public class EmsServiceDiscoveryProjectApplication {
+@EnableEurekaServer
+public class EmsServiceDiscoveryApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(EmsServiceDiscoveryProjectApplication.class, args);
+		SpringApplication.run(EmsServiceDiscoveryApplication.class, args);
 	}
 
 }
