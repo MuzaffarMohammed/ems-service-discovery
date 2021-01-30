@@ -1,4 +1,4 @@
-package com.mh.ems.servicediscovery;
+package com.appseonit.ems.servicediscovery;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

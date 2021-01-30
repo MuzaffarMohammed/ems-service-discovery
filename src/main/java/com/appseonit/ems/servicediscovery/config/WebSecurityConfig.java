@@ -1,3 +1,4 @@
+package com.appseonit.ems.servicediscovery.config;
 //package com.mh.ems.servicediscovery.config;
 
 //import org.springframework.security.config.annotation.web.builders.HttpSecurity;
